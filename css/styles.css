@@ -1,0 +1,413 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.clearfix {
+	float: none;
+	clear: both;
+}
+
+body {
+	background: url(../img/hojas.jpg);
+	background-attachment: fixed;
+}
+
+/*-------------------
+CONTENEDOR GLOBAL
+---------------------*/
+#global {
+	width: 65%;
+	margin: 0px auto;
+	margin-top: 30px;
+	padding: 25px;
+	background: #fff;
+	box-shadow: 0px 0px 10px gray;
+}
+
+/*-------------------------
+CABECERA DE LA PAGINA
+--------------------------*/
+#logo {
+	font-family: Verdana, Arial;
+	font-size: 28px;
+	letter-spacing: 4px;
+	line-height: 75px;
+	color: #fff;
+	text-align: left;
+	width: 750px;
+	height: 80px;
+	margin-bottom: 20px;
+	float: left;
+	text-transform: uppercase;
+}
+
+#menu {
+	font-family: Helvetica, Arial;
+	background: #333;
+	width: 100%;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+#menu ul {
+	line-height: 46px;
+	list-style: none;
+}
+
+#menu ul li{
+	height: 46px;
+	display: inline-block;
+	transition: all 300ms;
+}
+
+#menu ul li a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding-left: 17px;
+	padding-right: 15px;
+}
+
+/*--------------------------
+Contenido
+----------------------------*/
+#posts {
+	width: 60%;
+	float: left;
+	font-family: Helvetica, Arial;
+}
+
+.post {
+	padding: 5px;
+	margin-bottom: 30px;	
+}
+
+.post h2 {
+	font-size: 30px;
+	color: #333;
+}
+
+.date {
+	display: block;
+	color: gray;
+	margin-top: 4px;
+	font-weight: bold;
+	font-family: Helvetica, sans-serif;
+}
+
+.post p {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	line-height: 22px;
+	text-align: justify;
+}
+
+
+
+.boton-more {
+	font-size: 17px;
+	text-align: center;
+	padding: 13px;
+	background: #235E3D;
+	color: #fff;
+	text-decoration: none;
+	margin-top: 10px;
+	display: block;
+	width: 70px;
+	margin-bottom: 20px;
+	border-radius: 3px;
+
+	transition: all 250ms;
+}
+
+.boton-more:hover {
+	background-color: rgb(0, 0, 0);
+	border-radius: 30px;
+}
+
+/*--------------------------
+ASIDE SIDEBAR
+----------------------------*/
+#sidebar {
+	font-family: Helvetica, Arial;
+	width: 31%;
+	float: right;
+}
+
+#sidebar h4 {
+	margin-top: 50px;
+	margin-bottom: 20px;
+	text-align: center;
+	line-height: 10px;
+	color: #333;
+	background: url(../img/lines.png) repeat-x;
+}
+
+#sidebar h4 span {
+	background: #fff;
+	padding: 5px;
+}
+
+#sidebar img {
+	width: 100%;
+}
+
+#sidebar p {
+	font-size: 15px;
+	text-align: justify;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="number"],
+select {
+	padding: 5px;
+	border-radius: 2px;
+	border: 1px solid #ccc;
+	width: 80%;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+
+form input[type="submit"] {
+	background: #eee;
+	padding: 10px;
+	border: 1px solid #ccc;
+	color: #333;
+	cursor: pointer;
+}
+
+footer {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+	height: 47px;
+	background: rgba(51, 51, 51, 0.70);
+	margin: 0px auto;
+	width: 65%;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 15px;
+	line-height: 47px;
+	text-align: center;
+}
+
+footer span {
+	color: #ccc;
+}
+
+.bx-wrapper, .bx-viewport {
+	height: 250px !important;
+}
+
+/*----------------------------
+BOTONES PARA CAMBIAR DE TEMA
+-----------------------------*/
+#selector-theme {
+	position: fixed;
+	top: 40%;
+	background: rgba(51, 51, 51, 0.5);
+	width: 50px;
+	height: 100px;
+}
+
+#selector-theme #to-green,
+#selector-theme #to-red,
+#selector-theme #to-blue {
+	width: 25px;
+	height: 25px;
+	border: 1px solid white;
+	display: block;
+	margin: 0px auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+#selector-theme #to-green {
+	background: #235E3D;
+}
+
+#selector-theme #to-red {
+	background: #CA3413;
+}
+
+#selector-theme #to-blue {
+	background: #1F87C4;
+}
+
+/*------------------------------------------------
+Scroll automatico animado y suavizado hacia arriba
+--------------------------------------------------*/
+.subir {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	float: right;
+}
+
+/* ---------------------------------------------
+ACORDEON
+-----------------------------------------------*/
+#box {
+	width: 60%;
+	float: left;
+	margin-top: 40px;;
+}
+
+#acordeon {
+	margin-top: 20px;
+}
+
+#box h2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 30px;
+	color: #333
+}
+
+#reloj {
+	font-size: 40px;
+	font-weight: bold;
+	font-family: Helvetica, Arial;
+	color: #333;
+	border: 5px dashed #333;
+	width: 30%;
+	padding: 30px;
+	margin: 0px auto;
+}
+
+/*------------------------------------
+FORMULARIO DE CONTACTO HTML
+--------------------------------------*/
+#form_contact {
+	width: 50%;
+	margin-top: 15px;
+	font-family: Helvetica, Arial;
+}
+
+#form_contact label {
+	display: block;
+	width: 100%;
+	margin-top: 5px;
+}
+
+/* Span que marca los errores */
+.form-error {
+	/* float: right; */
+	font-size: 11px;
+	background: red;
+	color: #fff;
+	padding: 10px;
+	width: 100%;
+}
+
+
+/****************
+Tamaño de slider
+*****************/
+.bx-wrapper, .bx-viewport {
+    height: 300px !important;
+}
+
+
+/*************
+Unidad I
+**************/
+.pa {
+	padding-top: 15px;
+	padding-left: 15px;
+	border: 1px solid #ccc;
+	box-shadow: 1px 2px 4px #ccc;
+	border-radius: 6px;
+	margin-bottom: 25px;
+}
+
+.pa h2 {
+	font-family: Geneva, Tahoma, sans-serif;
+	font-size: 22px;	
+}
+
+.pa p {
+	font-size: 16px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	margin-right: 30px;
+
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align: justify;
+}
+
+.pa > h2 > span {
+	color: red;
+}
+
+.more {
+	display: none;
+}
+
+.more div {
+	padding: 10px;
+}
+
+.more > div > img {
+	display: block;
+	width: 80%;
+	margin: 0px auto;
+}
+
+.fuentes {
+	font-style: italic;
+	color: gray;
+}
+
+.download a {
+	display: block;
+	float: left;
+	border: 1px solid black;
+	width: 70px !important;
+	height: 10px !important;
+	text-align: center;
+	line-height:10px;
+	color: #fff;
+	border-radius: 7px;
+	text-decoration: none;
+	margin-left: 12px;
+
+	box-shadow: 3px 3px 5px black;
+}
+
+.download {
+	width: 350px;
+	height: 85px;
+	background-color: orange;
+	border-radius: 10px;
+	box-shadow: 2px 2px 4px rgb(110, 110, 110);
+
+	float: right;
+
+	margin-top: 20px;
+	margin-right: 14px;
+}
+
+.download span {
+	display: block;
+	width: 100%;
+	text-align: center;
+	/* padding-bottom: 3px; */
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	color: #fff;
+	font-size: 28px;
+	letter-spacing: 1px;
+}
+
+.informacion {
+	float: left;
+	width: 50%;
+}
+
+.informacion p {
+	font-size: 14px;
+}
